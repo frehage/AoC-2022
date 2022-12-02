@@ -1,3 +1,6 @@
 *.csproj
 */bin
 */obj
+/.vs
+*/.vs
+*.sln

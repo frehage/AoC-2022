@@ -1,4 +1,4 @@
-﻿var data_file = @"C:\Users\fredr\Documents\AdventOfCode2022\1\data.txt";
+﻿var data_file = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "data.txt");
 string[] lines = System.IO.File.ReadAllLines(data_file);
 var loads = lines.Aggregate(new List<int> { 0 }, (acc, x) => {
     if (x == "") {
