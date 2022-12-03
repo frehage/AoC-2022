@@ -1,6 +1,5 @@
-﻿var data_file = Path.Combine(Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName, "data.txt");
-string[] lines = System.IO.File.ReadAllLines(data_file);
-var loads = lines.Aggregate(new List<int> { 0 }, (acc, x) => {
+﻿string[] data = System.IO.File.ReadAllLines("data.txt");
+var loads = data.Aggregate(new List<int> { 0 }, (acc, x) => {
     if (x == "") {
         acc.Add(0);
     }  
